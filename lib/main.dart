@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iline_car_wash_app/features/splash/presentation/splash_screen.dart';
+import 'package:iline_car_wash_app/core/theme/app_theme.dart';
+import 'package:iline_car_wash_app/features/onboarding/presentation/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,16 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
-        ),
-      ),
+      theme: AppTheme.lightTheme,
     );
   }
 }
