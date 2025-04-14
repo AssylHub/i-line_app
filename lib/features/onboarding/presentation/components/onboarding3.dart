@@ -5,11 +5,30 @@ class Onboarding3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(
-      "assets/Group 11.png",
-      width: double.infinity,
-      height: double.infinity,
-      fit: BoxFit.cover,
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Container(color: Theme.of(context).colorScheme.surface),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 20,
+          children: [
+            Image.asset(
+              "assets/onboarding3.png",
+              width: 200,
+              height: 300,
+              fit: BoxFit.contain,
+            ),
+            Text(
+              "Встаньте в очередь",
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.tertiary,
+                fontSize: 23,
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }

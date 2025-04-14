@@ -7,6 +7,7 @@ class AppTheme {
       surface: AppColors.background,
       primary: AppColors.primary,
       secondary: AppColors.secondary,
+      tertiary: AppColors.tertiary,
       onPrimary: AppColors.onPrimary,
       inverseSurface: AppColors.inverseBackground,
     ),

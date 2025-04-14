@@ -9,11 +9,24 @@ class Onboarding2 extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Container(color: Theme.of(context).colorScheme.surface),
-        Image.asset(
-          "assets/Group 11.png",
-          width: 200,
-          height: 300,
-          fit: BoxFit.cover,
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 20,
+          children: [
+            Image.asset(
+              "assets/onboarding2.png",
+              width: 200,
+              height: 300,
+              fit: BoxFit.contain,
+            ),
+            Text(
+              "Выберите автомойку онлайн",
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.tertiary,
+                fontSize: 23,
+              ),
+            ),
+          ],
         ),
       ],
     );

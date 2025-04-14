@@ -67,7 +67,7 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
           // Dot indicators
           Align(
-            alignment: Alignment(0, 0.5),
+            alignment: Alignment(0, 0.65),
             child: FractionallySizedBox(
               widthFactor: 1.0,
 
